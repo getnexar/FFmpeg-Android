@@ -14,12 +14,12 @@ class FileUtils {
     private static final String FFPROBE_FILE_NAME = "ffprobe";
 
     static File getFFmpeg(Context context) {
-        File folder = context.getFilesDir();
+	File folder = new File(context().getApplicationInfo().nativeLibraryDir);
         return new File(folder, FFMPEG_FILE_NAME);
     }
 
     static File getFFprobe(Context context) {
-        File folder = context.getFilesDir();
+	File folder = new File(context().getApplicationInfo().nativeLibraryDir);
         return new File(folder, FFPROBE_FILE_NAME);
     }
 
