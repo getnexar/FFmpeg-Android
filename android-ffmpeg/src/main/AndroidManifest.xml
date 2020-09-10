@@ -1,1 +1,3 @@
-<manifest package="bravobit.nl.ffmpegandroid" />
+<manifest package="bravobit.nl.ffmpegandroid">
+	<application android:extractNativeLibs = "true" />
+</manifest>
